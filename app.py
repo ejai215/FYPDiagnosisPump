@@ -54,13 +54,13 @@ def predict():
         o2 = "Confidence: {}".format(probablity[0]*100)
     elif single==1:
         o1 = "The pump status is severe"
-        o2 = "Confidence: {}".format(probablity[1]*100*100)
+        o2 = "Confidence: {}".format(probablity[1]*100)
     elif single==2:
         o1 = "The pump status is mild"
-        o2 = "Confidence: {}".format(probablity[2]*100*100)
+        o2 = "Confidence: {}".format(probablity[2]*100)
     else:
         o1 = "The pump status is mild2"
-        o2 = "Confidence: {}".format(probablity[3]*100*100)
+        o2 = "Confidence: {}".format(probablity[3]*100)
         
     return render_template('home.html', output1=o1, output2=o2, query1 = request.form['query1'], query2 = request.form['query2'],query3 = request.form['query3'],query4 = request.form['query4'],query5 = request.form['query5'],query6 = request.form['query6'],query7 = request.form['query7'],query8 = request.form['query8'],query9 = request.form['query9'],query10 = request.form['query10'])
     
