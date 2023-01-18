@@ -43,7 +43,7 @@ def predict():
     model = pickle.load(open("PumpPredictionModel.pkl", "rb"))
     
     
-    data = [[inputQuery1, inputQuery2, inputQuery3, inputQuery4, inputQuery5]]
+    data = [[inputQuery1, inputQuery2, inputQuery3, inputQuery4, inputQuery5, inputQuery6, inputQuery7, inputQuery8, inputQuery9, inputQuery]]
     new_df = pd.DataFrame(data, columns = ['mean', 'max', 'kurtosis', 'variance','onenorm','mean1', 'max1', 'kurtosis1','variance1','onenorm1'])
     
     single = model.predict(new_df)
@@ -66,4 +66,3 @@ def predict():
     
 if __name__ == "__main__":
     app.run()
-
