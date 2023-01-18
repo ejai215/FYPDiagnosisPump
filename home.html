@@ -10,48 +10,49 @@
 	  <div class="container">
 		<div class="row">
 
-		  <form action="{{ url_for('predict')}}" method="POST">
+		  <form action="/predict" method="POST">
 		  	<div class="col-sm-9">
 			 <div class="form-group  purple-border">
-				  <label for="comment">mean:</label>
-				  <textarea class="form-control" rows="2" id="query1" name="query1" rows="2" cols="5" autofocus>{{query1}}</textarea>
+				  <label for="query1">mean:</label>
+				  <textarea class="form-control" rows="2" id="query1" name="query1" rows="2" cols="5"></textarea>
 			</div>
 			<div class="form-group  purple-border">
-				  <label for="comment">max:</label>
-				  <textarea class="form-control" rows="2" id="query2" name="query2" rows="2" cols="5" autofocus>{{query2}}</textarea>
+				  <label for="query2">max:</label>
+				  <textarea class="form-control" rows="2" id="query2" name="query2" rows="2" cols="5"></textarea>
 			</div>
 			<div class="form-group  purple-border">
-				  <label for="comment">kurtosis:</label>
-				  <textarea class="form-control" rows="2" id="query3" name="query3" rows="2" cols="5" autofocus>{{query3}}</textarea>
+				  <label for="query3">kurtosis:</label>
+				  <textarea class="form-control" rows="2" id="query3" name="query3" rows="2" cols="5"></textarea>
 			</div>
 			<div class="form-group  purple-border">
-				  <label for="comment">variance:</label>
-				  <textarea class="form-control" rows="2" id="query4" name="query4" rows="2" cols="5" autofocus>{{query4}}</textarea>
+				  <label for="query4">variance:</label>
+				  <textarea class="form-control" rows="2" id="query4" name="query4" rows="2" cols="5"></textarea>
 			</div>
 			<div class="form-group  purple-border">
-				  <label for="comment">onenorm:</label>
-				  <textarea class="form-control" rows="2" id="query5" name="query5" rows="2" cols="5" autofocus>{{query5}}</textarea>
+				  <label for="query5">onenorm:</label>
+				  <textarea class="form-control" rows="2" id="query5" name="query5" rows="2" cols="5"></textarea>
+                        </div>
+			<div class="col-sm-9">
+			 <div class="form-group  purple-border">
+				  <label for="query6">mean1:</label>
+				  <textarea class="form-control" rows="2" id="query6 name="query6" rows="2" cols="5"></textarea>
 			</div>
 			<div class="form-group  purple-border">
-				  <label for="comment">mean1:</label>
-				  <textarea class="form-control" rows="2" id="query6" name="query6" rows="2" cols="5" autofocus>{{query6}}</textarea>
+				  <label for="query7">max1:</label>
+				  <textarea class="form-control" rows="2" id="query7" name="query7" rows="2" cols="5"></textarea>
 			</div>
 			<div class="form-group  purple-border">
-				  <label for="comment">max1:</label>
-				  <textarea class="form-control" rows="2" id="query7" name="query7" rows="2" cols="5" autofocus>{{query7}}</textarea>
+				  <label for="query8">kurtosis1:</label>
+				  <textarea class="form-control" rows="2" id="query8" name="query8" rows="2" cols="5"></textarea>
 			</div>
 			<div class="form-group  purple-border">
-				  <label for="comment">kurtosis1:</label>
-				  <textarea class="form-control" rows="2" id="query8" name="query8" rows="2" cols="5" autofocus>{{query8}}</textarea>
+				  <label for="query4">variance1:</label>
+				  <textarea class="form-control" rows="2" id="query9" name="query9" rows="2" cols="5"></textarea>
 			</div>
 			<div class="form-group  purple-border">
-				  <label for="comment">variance1:</label>
-				  <textarea class="form-control" rows="2" id="query9" name="query9" rows="2" cols="5" autofocus>{{query9}}</textarea>
+				  <label for="query10">onenorm1:</label>
+				  <textarea class="form-control" rows="2" id="query10" name="query10" rows="2" cols="5"></textarea>
 			</div>
-			<div class="form-group  purple-border">
-				  <label for="comment">onenorm1:</label>
-				  <textarea class="form-control" rows="2" id="query10" name="query10" rows="2" cols="5" autofocus>{{query10}}</textarea>
-				</div>
 			
 			</div>
 			</div>
@@ -63,10 +64,11 @@
 		  
 		<div class="row"> 
 			<div class="col-sm-9">
-			<textarea class="form-control" rows="2" id="comment" name="query11" rows="2" cols="5" autofocus>{{output1}}</textarea>
-			<textarea class="form-control" rows="2" id="comment" name="query12" rows="2" cols="5" autofocus>{{output2}}</textarea>
+			<textarea class="form-control" rows="2" id="comment" name="query11" rows="2" cols="5"></textarea>
+			<textarea class="form-control" rows="2" id="comment" name="query12" rows="2" cols="5"></textarea>
 			</div>
 		</div>
 	</div>		
    </body>
 </html>
+
